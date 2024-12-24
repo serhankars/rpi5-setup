@@ -19,3 +19,4 @@ abbr -a -U -- stat 'stat -x'
 abbr -a -U -- tree 'tree -C'
 abbr -a -U -- vi nvim
 abbr -a -U -- wget 'wget -c'
+abbr -a -U -- howto tldr

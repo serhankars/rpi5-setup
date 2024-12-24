@@ -49,3 +49,5 @@ cp -rf fish ~/.config/
 
 sudo apt-get install tmux -y
 
+cp .bash_aliases ~
+
