@@ -1,8 +1,8 @@
 # ~/.config/fish/functions/abbr.fish
 
 alias :q=exit
-alias cat=bat
-alias cd=z
+alias cat=batcat
+alias z=cd
 alias curl=/usr/local/opt/curl/bin/curl
 alias d='git diff --color-moved'
 alias g=git
