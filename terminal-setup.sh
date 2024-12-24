@@ -45,7 +45,7 @@ fc-cache -f -v
 
 sudo apt-get install zoxide -y
 sudo apt-get install fish -y
-cp -rf fish ~/.config/fish
+cp -rf fish ~/.config/
 
 sudo apt-get install tmux -y
 

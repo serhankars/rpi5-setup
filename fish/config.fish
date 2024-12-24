@@ -11,3 +11,5 @@ set -x KUBE_EDITOR nvim
 set -x GOPATH /Users/hausenbl/go
 set -ga fish_user_paths /usr/local/bin 
 zoxide init fish | source
+
+source ~/.config/fish/functions/abbr.fish
