@@ -1,9 +1,13 @@
+sudo apt install scdoc
+sudo apt-get install unzip
+
 pushd ~
 rm -rf alactritty
 git clone https://github.com/alacritty/alacritty.git
 pushd ~/alacritty
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"   
 rustup override set stable
 rustup update stable
 
@@ -23,3 +27,19 @@ scdoc < extra/man/alacritty.1.scd | gzip -c | sudo tee /usr/local/share/man/man1
 scdoc < extra/man/alacritty-msg.1.scd | gzip -c | sudo tee /usr/local/share/man/man1/alacritty-msg.1.gz > /dev/null
 scdoc < extra/man/alacritty.5.scd | gzip -c | sudo tee /usr/local/share/man/man5/alacritty.5.gz > /dev/null
 scdoc < extra/man/alacritty-bindings.5.scd | gzip -c | sudo tee /usr/local/share/man/man5/alacritty-bindings.5.gz > /dev/null
+
+popd
+
+rm -rf ~/.config/alacritty
+mkdir -p ~/.config/alacritty && cp alacritty.toml ~/.config/alacritty/
+git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
+
+rm JetBrainsMono.zip
+curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip
+mkdir JetBrainsMono
+unzip JetBrainsMono.zip -d JetBrainsMono
+rm JetBrainsMono.zip
+sudo cp JetBrainsMono/*.ttf /usr/share/fonts/
+rm -rf JetBrainsMono
+fc-cache -f -v
+
