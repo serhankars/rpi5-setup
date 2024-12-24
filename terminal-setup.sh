@@ -43,3 +43,8 @@ sudo cp JetBrainsMono/*.ttf /usr/share/fonts/
 rm -rf JetBrainsMono
 fc-cache -f -v
 
+sudo apt-get install fish -y
+cp -rf fish ~/.config/fish
+
+
+
