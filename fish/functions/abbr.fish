@@ -1,7 +1,7 @@
 # ~/.config/fish/functions/abbr.fish
 
 abbr -a -U -- :q exit
-abbr -a -U -- cat bat
+abbr -a -U -- cat batcat
 abbr -a -U -- cd z
 abbr -a -U -- curl /usr/local/opt/curl/bin/curl
 abbr -a -U -- d 'git diff --color-moved'
