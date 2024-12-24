@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt-get install exa tldr bat -y
 tldr -u
 rm code_arm64.deb

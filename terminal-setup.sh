@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt install scdoc
 sudo apt-get install unzip
 
